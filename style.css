@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Readex+Pro:wght@400;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: "Readex Pro", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 10px 50px;
+    font-weight: 600;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(62, 191, 255);
+    color: hsl(0, 0%, 100%);
+}
+.navbar .nav_left{
+    font-size: 24px;
+}
+.hero__section .hero__section--icon svg {
+    left: 50%;
+    top: 210px;
+    transform: translateX(-50%);
+    letter-spacing: -1px;
+}
+
+.nav_link:link,
+.nav_link:visited {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-right: 30px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+}
+.nav_link:last-child {
+    display: none;
+    position: relative;
+}
+.navbar .nav_button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(212, 27%, 19%);
+    padding: 10px 16px;
+    border-radius: 10rem;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase !important;
+    font-size: 10px;
+    letter-spacing: -0.5px !important;
+}
+
+.hero__section {
+    background: url("./images/desktop/image-header.jpg"), rgb(62, 191, 255);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -145px;
+    height: 550px;
+    display: flex;
+    font-size: 44px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: hsl(0, 0%, 100%);
+}
+.hero__section .hero__section--heading {
+    position: relative;
+}
+.hero__section .hero__section--icon svg {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.section .container-1 {
+    padding: 200px 140px 0px 100px;
+}
+.section .container-1 .section_heading {
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: hsl(212, 27%, 19%);
+}
+.section .container-1 .section_content {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: hsl(213, 9%, 39%);
+}
+
+.section .container-2 {
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.section .container-3 {
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.section .container-4 {
+    padding: 200px 100px 0px 140px;
+}
+.section .container-4 .section_heading {
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: hsl(212, 27%, 19%);
+}
+.section .container-4 .section_content {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: hsl(213, 9%, 39%);
+}
+
+.section .container-5 {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    color: hsl(167, 40%, 24%);
+}
+
+.section .container-6 {
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    color: hsl(198, 62%, 26%);
+}
+
+.section .section_content .section_link:link, .section .section_content .section_link:visited{
+    font-family: "Fraunces", serif;
+    margin-top: 20px;
+    text-decoration: none;
+    display: block;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.container-1 .section_content .section_link::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 120px;
+    bottom: -2px;
+    left: 0;
+    background-color: hsla(51, 100%, 49%, 0.404);
+    border-radius: 100px;
+}
+
+.container-4 .section_content .section_link::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 120px;
+    bottom: -2px;
+    left: 0;
+    background-color:  hsla(7, 99%, 70%, 0.404);
+    border-radius: 100px;
+}
+
+.section_image_content {
+    position: absolute;
+    width: 350px;
+    text-align: center;
+    font-family: "Readex Pro", sans-serif;
+    letter-spacing: -1px;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+.section_image_content .section_image_content_header {
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: -1.5px;
+    padding-bottom: 35px;
+}
+
+.section_clients {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    background-color: rgb(255, 251, 248);
+    padding: 140px 120px 100px 120px;
+    text-align: center;
+}
+
+.section_clients .sections_clients_heading {
+    grid-column: 1/-1;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: hsl(210, 4%, 67%);
+}
+
+.card .card_image {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    margin: 0px auto;
+    display: block;
+}
+
+.card .card_content {
+    padding-top: 64px;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    height: 100px;
+    letter-spacing: -1px;
+}
+
+.card .card_name {
+    margin-top: 120px;
+    font-family: "Fraunces", serif;
+    text-transform: capitalize;
+    color: hsl(212, 27%, 19%);
+    font-size: 20px;
+}
+.card .card_post {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: hsl(210, 4%, 67%);
+}
+
+.section_images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+}
+.section_images img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    padding-top: 60px;
+    display: grid;
+    justify-items: center;
+    height: 350px;
+    background-color: rgb(144, 212, 197);
+    color: hsl(168, 34%, 41%);
+}
+
+.footer .footer_heading {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    font-weight: 600;
+}
+.footer_link:link,
+.footer_link:visited {
+    font-family: "Readex Pro", sans-serif;
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 40px;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+
+.footer_link:last-child {
+    margin-right: 0;
+}
+
+.footer .footer_icons {
+    margin-top: 30px;
+}
+
+.footer .footer_icon:not(.footer_icon_last) {
+    margin-right: 20px;
+}
+
+
+/* Navbar */
+.mobile_menu{
+    position: absolute;
+    top: 70px;
+    height: 400px;
+    padding-top: 20px;
+    left: 12%;
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_link_mobile:link, .nav_link_mobile:active{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.mobile_nav_button:link, .mobile_nav_button:active{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    background-color: hsl(51, 100%, 49%);
+    padding: 15px 40px;
+    border-radius: 100px;
+}
+.mobile_nav_remove{
+    display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1250px) {
+    .hero__section {
+        background-position-y: bottom;
+    }
+    .section .container-1 .section_heading {
+        font-family: "Fraunces", serif;
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    .section .container-4 .section_heading {
+        font-family: "Fraunces", serif;
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar .nav_link {
+        display: none;
+    }
+    .navbar .nav_link:last-child {
+        display: block;
+    }
+    .hero__section .hero__section--icon svg {
+        left: 50%;
+        top: 300px;
+        transform: translateX(-50%);
+    }
+    .section .container-1 {
+        padding: 0 30px;
+        justify-self: center;
+        align-self: center;
+    }
+    .section .container-4 {
+        padding: 0 30px;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .section .container-1 {
+        padding: 0 40px;
+    }
+    .section .container-4 {
+        padding: 0 40px;
+    }
+    .section_image_content{
+        font-size: 16px;
+    }
+    .section_image_content .section_image_content_header {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+    .section_clients{
+        padding: 100px 60px 80px 60px;
+        grid-template-rows: 80px 1fr;
+        gap: 20px;
+    }
+    .card .card_content {
+        padding-top: 50px;
+        font-size: 16px;
+    }
+    .card .card_name {
+        margin-top: 110px;
+        font-size: 18px;
+    }
+    .card .card_post{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .navbar{
+        padding: 10px 20px;
+    }
+    .hero__section {
+        font-size: 35px;
+        height: 400px;
+    }
+    .hero__section .hero__section--icon svg {
+        top: 210px;
+    }
+    .section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .section .container-1{
+        text-align: center;
+    }
+    .section .container-1 .section_content{
+        margin-top: 50px;
+    }
+    .section .section_content .section_link:link, .section .section_content .section_link:visited{
+        margin-top: 80px;
+    }
+    .container-1 .section_content .section_link::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section .container-2{
+        grid-row: 1;
+    }
+    .section .container-4{
+        text-align: center;
+    }
+    .section .container-4 .section_content{
+        margin-top: 50px;
+    }
+    .container-4 .section_content .section_link::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section_clients{
+        gap: 10px;
+    }
+    .section_clients .sections_clients_heading {
+        font-size: 20px;
+    }
+    .card .card_content {
+        font-size: 14px;
+    }
+    .card .card_name {
+        margin-top: 80px;
+        font-size: 16px;
+    }
+    .section_images{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .hero__section {
+        font-size: 30px;
+    }
+    .section_clients {
+        justify-items: center;
+        grid-template-rows: 80px 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        gap: 50px;
+    }
+    .card .card_content {
+        padding-top: 40px;
+    }
+    .card .card_name {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero__section {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero__section {
+        font-size: 20px;
+        background: url("./images/mobile/image-header.jpg"), rgb(62, 191, 255);
+        height: 500px;
+        background-position-y: -570px;
+        background-size: cover;
+        padding-top: 135px;
+    }
+    .hero__section .hero__section--icon svg {
+        top: 300px;
+    }
+    .section .container-2{
+        background-image: url("./images/mobile/image-transform.jpg");
+    }
+    .section .container-3{
+        background-image: url("./images/mobile/image-stand-out.jpg");
+    }
+    .section .container-5 {
+        background-image: url("./images/mobile/image-graphic-design.jpg");
+    }
+    .section .container-6 {
+        background-image: url("./images/mobile/image-photography.jpg");
+    }
+}
