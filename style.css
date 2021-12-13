@@ -522,4 +522,23 @@
     .section .container-6 {
         background-image: url("./images/mobile/image-photography.jpg");
     }
+    .section_clients {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero__section {
+        font-size: 20px;
+        height: 400px;
+        background-position-y: -625px;
+        background-size: cover;
+        padding-top: 100px;
+    }
+    .hero__section .hero__section--icon svg {
+        top: 215px;
+    }
+    .mobile_menu{
+        height: 300px;
+    }
 }
